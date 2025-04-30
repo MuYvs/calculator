@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100dvw;
+  height: 100dvh;
+  align-content: center;
+}
+.calc {
+  width: 400px;
+  height: 500px;
+  border: 1px solid;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+}
+.screen {
+  width: 100%;
+  height: 75px;
+  border: 1px solid;
+}
+.buttons {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  gap: 12px;
+}
+#equal {
+  grid-column: 3 / 6;
+}
